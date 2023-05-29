@@ -1,0 +1,81 @@
+// Media queries
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+  
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+  
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+  
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+  
+// too large devices
+@mixin xxl {
+      @media (min-width: #{$screen-xxl-min}) {
+          @content;
+      }
+}
+
+
+.container {
+    @include xxl {
+        max-width: 1580px;
+    }
+}
+
+.delay-a1 {
+    animation-delay: $anim-delay-1s;
+}
+.delay-a2 {
+    animation-delay: $anim-delay-2s;
+}
+.delay-a3 {
+    animation-delay: $anim-delay-3s;
+}
+.delay-a4 {
+    animation-delay: $anim-delay-4s;
+}
+.delay-a5 {
+    animation-delay: $anim-delay-5s;
+}
+
+@mixin mainHeading($color: $white) {
+    font-size: 2.5rem;
+    color: $color;
+    font-family: $Nexa-Bold;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.5;
+    
+    @include md {
+        font-size: 3rem;
+    }
+    @include lg {
+        font-size: 4rem;
+    }
+    @include xl {
+        font-size: 5rem;
+    }
+    @include xxl {
+        font-size: 6rem;
+    }
+}

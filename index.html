@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANC CORP</title>
+    <link rel="stylesheet" href="./css/vendors/animate.min.css" />
+    <link rel="stylesheet" href="./css/vendors/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/vendors/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="">
+    <!--Header-->
+    <header class="fixed-top py-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="col-2 col-sm-1 logo">
+          <img src="./images/ANP-Logo.png" class="img-fluid" alt="logo" />
+        </div>
+        <nav
+          class="col-10 logo d-flex justify-content-end align-items-center gap-5"
+        >
+          <ul class="d-flex gap-5 d-none d-xl-flex">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#">GALLERY / E-TOUR</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <div class="menuBtnGroup">
+            <button class="menuBtn">MENU</button>
+            <button class="enquireBtn">ENQUIRE</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--MENU-->
+    <div class="menu d-none">
+      <button class="menu_close">menu</button>
+      <div class="menu_inner">
+        <div class="menu_left">
+          <div class="menu_main">
+            <ul>
+              <li class="animated fadeInDown delay-a1">
+                <a href="#">About</a>
+              </li>
+              <li class="animated fadeInDown delay-a2">
+                <a href="#">Projects</a>
+              </li>
+              <li class="animated fadeInDown delay-a3">
+                <a href="#">Gallery/E-tour</a>
+              </li>
+              <li class="animated fadeInDown delay-a4">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu_right"></div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <!-- Slider main container -->
+        <div class="home-carousel owl-carousel owl-theme">
+          <div class="item">
+            <picture>
+              <source
+                srcset="./images/banner-1.png"
+                media="(min-width: 1024px)"
+              />
+              <img
+                src="./images/banner-1.png"
+                class="img-fluid"
+                alt="banner 1"
+              />
+            </picture>
+          </div>
+
+          <div class="item">
+            <picture>
+              <source
+                srcset="./images/banner-2.png"
+                media="(min-width: 1024px)"
+              />
+              <img
+                src="./images/banner-2.png"
+                class="img-fluid"
+                alt="banner 2"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Projects -->
+      <section class="our-projects" id="projects">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 op-left">
+              <h2>Our <br />Projects</h2>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Today, we maintain a portfolio of high-quality commercial,
+                residential, and mixed-use properties totalling more than 11.5
+                million square feet. Our clients span the area’s top industries,
+                including leading firms in tech, media, healthcare, biotech, and
+                professional services.
+              </p>
+            </div>
+          </div>
+
+          <div class="op-slider">
+            <div class="container">
+              <!--filters-->
+              <div id="project-terms" class="project-terms">
+                <a id="all" class="btn btn-default active" href="#">All</a>
+                <a id="residential" class="btn btn-default" href="#"
+                  >Residential</a
+                >
+                <a id="commercial" class="btn btn-default" href="#"
+                  >Commercial</a
+                >
+                <a id="speciality" class="btn btn-default" href="#"
+                  >Speciality</a
+                >
+              </div>
+            </div>
+
+            <!--main carousel element-->
+            <div id="projects-carousel" class="owl-carousel">
+              <div class="project commercial">
+                <div class="projectImage">
+                  <img
+                    src="./images/op-slider-1.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projectInfo">
+                  <h2>ANP Ultimus</h2>
+                  <p>
+                    The project features an extraordinary orientation of towers
+                    that facilitates an all-encompassing lifestyle, giving you a
+                    prestigious address to call your home.
+                  </p>
+                </div>
+                <div class="loc-config d-flex py-3">
+                  <span class="location">Wakad, Pune</span>
+                  <span class="config">2, 2.5, 3 & 3.5 BHKs</span>
+                </div>
+                <a href="#" class="viewDetails">View Details </a>
+              </div>
+
+              <div class="project residential">
+                <div class="projectImage">
+                  <img
+                    src="./images/op-slider-1.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projectInfo">
+                  <h2>ANP Ultimus</h2>
+                  <p>
+                    The project features an extraordinary orientation of towers
+                    that facilitates an all-encompassing lifestyle, giving you a
+                    prestigious address to call your home.
+                  </p>
+                </div>
+                <div class="loc-config d-flex py-3">
+                  <span class="location">Balewadi, Pune</span>
+                  <span class="config">2, 2.5, 3 & 3.5 BHKs</span>
+                </div>
+                <a href="#" class="viewDetails">View Details </a>
+              </div>
+
+              <div class="project speciality">
+                <div class="projectImage">
+                  <img
+                    src="./images/op-slider-1.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projectInfo">
+                  <h2>ANP Ultimus</h2>
+                  <p>
+                    The project features an extraordinary orientation of towers
+                    that facilitates an all-encompassing lifestyle, giving you a
+                    prestigious address to call your home.
+                  </p>
+                </div>
+                <div class="loc-config d-flex py-3">
+                  <span class="location">Wakad, Pune</span>
+                  <span class="config">2, 2.5, 3 & 3.5 BHKs</span>
+                </div>
+                <a href="#" class="viewDetails">View Details </a>
+              </div>
+
+              <div class="project speciality">
+                <div class="projectImage">
+                  <img
+                    src="./images/op-slider-1.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projectInfo">
+                  <h2>ANP Ultimus</h2>
+                  <p>
+                    The project features an extraordinary orientation of towers
+                    that facilitates an all-encompassing lifestyle, giving you a
+                    prestigious address to call your home.
+                  </p>
+                </div>
+                <div class="loc-config d-flex py-3">
+                  <span class="location">Wakad, Pune</span>
+                  <span class="config">2, 2.5, 3 & 3.5 BHKs</span>
+                </div>
+                <a href="#" class="viewDetails">View Details </a>
+              </div>
+
+              <div class="project residential">
+                <div class="projectImage">
+                  <img
+                    src="./images/op-slider-1.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projectInfo">
+                  <h2>ANP Ultimus</h2>
+                  <p>
+                    The project features an extraordinary orientation of towers
+                    that facilitates an all-encompassing lifestyle, giving you a
+                    prestigious address to call your home.
+                  </p>
+                </div>
+                <div class="loc-config d-flex py-3">
+                  <span class="location">Wakad, Pune</span>
+                  <span class="config">2, 2.5, 3 & 3.5 BHKs</span>
+                </div>
+                <a href="#" class="viewDetails">View Details </a>
+              </div>
+
+              <div class="project commercial">
+                <div class="projectImage">
+                  <img
+                    src="./images/op-slider-1.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projectInfo">
+                  <h2>ANP Ultimus</h2>
+                  <p>
+                    The project features an extraordinary orientation of towers
+                    that facilitates an all-encompassing lifestyle, giving you a
+                    prestigious address to call your home.
+                  </p>
+                </div>
+                <div class="loc-config d-flex py-3">
+                  <span class="location">Wakad, Pune</span>
+                  <span class="config">2, 2.5, 3 & 3.5 BHKs</span>
+                </div>
+                <a href="#" class="viewDetails">View Details </a>
+              </div>
+
+              <div class="project commercial">
+                <div class="projectImage">
+                  <img
+                    src="./images/op-slider-1.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projectInfo">
+                  <h2>ANP Ultimus</h2>
+                  <p>
+                    The project features an extraordinary orientation of towers
+                    that facilitates an all-encompassing lifestyle, giving you a
+                    prestigious address to call your home.
+                  </p>
+                </div>
+                <div class="loc-config d-flex py-3">
+                  <span class="location">Wakad, Pune</span>
+                  <span class="config">2, 2.5, 3 & 3.5 BHKs</span>
+                </div>
+                <a href="#" class="viewDetails">View Details </a>
+              </div>
+
+              <div class="project commercial">
+                <div class="projectImage">
+                  <img
+                    src="./images/op-slider-1.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projectInfo">
+                  <h2>ANP Ultimus</h2>
+                  <p>
+                    The project features an extraordinary orientation of towers
+                    that facilitates an all-encompassing lifestyle, giving you a
+                    prestigious address to call your home.
+                  </p>
+                </div>
+                <div class="loc-config d-flex py-3">
+                  <span class="location">Wakad, Pune</span>
+                  <span class="config">2, 2.5, 3 & 3.5 BHKs</span>
+                </div>
+                <a href="#" class="viewDetails">View Details </a>
+              </div>
+            </div>
+            <!--element to hold filtered out items-->
+            <div id="projects-hidden" class="hide"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--jQuery, Bootstrap JS Files-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/vendors/owl.carousel.min.js"></script>
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>

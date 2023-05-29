@@ -1,0 +1,207 @@
+.our-projects {
+    min-height: 100vh;
+    background-color: $secondary;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @include xl {
+        padding-top: 125px;
+        padding-bottom: 125px;
+    }
+
+
+    .container {
+        margin-top: 50px;
+        h2 {
+            @include mainHeading;
+        }
+        p {
+            color: #fff;
+            font-family: $Inter;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 3px;
+            font-size: 1rem;
+            margin-top: 1rem;
+        
+            @include xl {
+                font-size: 1.3rem;
+            }
+            @include xxl {
+                font-size: 1.5rem;
+            }
+        }
+
+        .op-slider {
+            margin-top: 100px;
+            .hide {
+                display: none;
+            }
+
+            .project-terms {
+                a {
+                    border: none;
+                    font-family: $Inter;
+                    font-size: 1.8rem;
+                    color: rgba($color: #fff, $alpha: 0.2);
+                    padding: 1rem 2rem;
+                    border-radius: 0;
+                    margin-left: -4px;
+                    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+                    &:hover {
+                        color: $primary;
+                    }
+
+                    &.active {
+                        color: rgba($color: #fff, $alpha: 1.0);
+                        border-bottom: 1px solid rgba($color: #fff, $alpha: 1.0);
+                    }
+                }
+            }
+
+            .owl-carousel {
+                .project{
+                    margin: 20px;
+            
+                    .projectImage {
+                        margin-bottom: 30px;
+                    }
+                    .projectInfo {
+                        color: #fff;
+                        h2 {
+                            font-family: $Nexa-Book;
+                            font-size: 30px;
+                            @include xl {
+                                font-size: 40px;
+                            }
+                        }
+                        p {
+                            font-family: $Inter;
+                            font-weight: 300;
+                            font-size: 16px;
+                            
+                            line-height: 1.5;
+                            color: #88929D;
+                            margin-top: 16px;
+                            margin-bottom: 32px;
+                            @include xl {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .loc-config {
+                        border-top: 1px solid rgba($color: $white, $alpha: 0.2);
+                        border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+                        font-family: $Inter;
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: $white;
+                        margin-bottom: 32px;
+                        @include xl {
+                            font-size: 20px;
+                        }
+            
+                        span:not(:first-child) {
+                            padding-left: 32px;
+                            margin-left: 32px;
+                            border-left: 1px solid rgba($color: $white, $alpha: 0.2);
+                        }
+                    }
+            
+                    .viewDetails {
+                        font-family: $Inter;
+                        font-weight: 700;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        color: #FFF;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+            
+                        &::before {
+                            content: '';
+                            display: block;
+                            width: 60px;
+                            height: 1px;
+                            background-color: $white;
+                        }
+                    }
+            
+                    
+                }
+
+                .owl-stage-outer {
+                    overflow: visible !important;
+                    .owl-stage {
+                        padding-left: 0 !important;
+                    }
+                }
+                .owl-nav {
+                    position: absolute;
+                    top: 25%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    width: 88%;
+                    justify-content: space-between;
+                    left: -0.5%;
+                    @include lg { 
+                        
+                        width: 85%;
+                    }
+                    @include xl { 
+                        top: 40%;
+                        width: 96%;
+                        left: -1%;
+                    }
+                    .owl-next, .owl-prev {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        background-color: rgba($color: $white, $alpha: 1);
+                        border-radius: 50%;
+                        text-indent: -9999px;
+                        transition: all 0.5s;
+                        @include xl {
+                            width: 80px;
+                            height: 80px;
+                        }
+        
+                        img {
+                            transition: all 0.5s;
+                            width: 50%;
+                            @include xl {
+                                width: auto;
+                            }
+                        }
+        
+                        &:hover {
+                            background-color: $primary;
+        
+                            img {
+                                filter: invert(1);
+                            }
+                        }
+                    }
+                    .owl-next {
+                        img {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    
+        .owl-carousel  {
+            
+        }
+    }
+
+
+   
+
+
+}
