@@ -1,7 +1,16 @@
 const body = document.querySelector('body');
+const header = document.querySelector('header');
 const menuBtn = document.querySelector('.menuBtn');
 const menu = document.querySelector('.menu');
 const menuClose = document.querySelector('.menu_close');
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 200) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
 
 menuBtn.addEventListener('click', function () {
   menu.classList.remove('d-none');
@@ -9,6 +18,22 @@ menuBtn.addEventListener('click', function () {
 
 menuClose.addEventListener('click', function () {
   menu.classList.add('d-none');
+});
+
+new WOW().init();
+
+$('.circle-btn').on('mouseenter', function () {
+  console.log('hello');
+  setTimeout(() => {
+    $('.getinTouch h2').css('color', '#fff');
+  }, 500);
+});
+
+$('.circle-btn').on('mouseleave', function () {
+  console.log('hello');
+  setTimeout(() => {
+    $('.getinTouch h2').css('color', '#000');
+  }, 500);
 });
 
 // Home Slider

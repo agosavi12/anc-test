@@ -1,8 +1,13 @@
 .our-projects {
     min-height: 100vh;
     background-color: $secondary;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include lg {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     @include xl {
         padding-top: 125px;
@@ -33,7 +38,10 @@
         }
 
         .op-slider {
-            margin-top: 100px;
+            margin-top: 0px;
+            @include xl {
+                margin-top: 100px;
+            }
             .hide {
                 display: none;
             }
@@ -135,6 +143,10 @@
                     .owl-stage {
                         padding-left: 0 !important;
                     }
+
+                    .owl-item:not(.active) {
+                        opacity: 0.3;
+                    }
                 }
                 .owl-nav {
                     position: absolute;
@@ -194,10 +206,7 @@
         }
 
         
-    
-        .owl-carousel  {
-            
-        }
+
     }
 
 

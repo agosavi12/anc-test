@@ -79,3 +79,22 @@
         font-size: 6rem;
     }
 }
+
+@mixin subHeading($color: white) {
+    color: $color;
+    font-size: 16px;
+    font-family: $Nexa-Book;
+
+    @include xxl {
+        font-size: 2.5rem;
+    }
+}
+
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+}

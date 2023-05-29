@@ -1,0 +1,42 @@
+.about {
+    background-color: $white;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include lg {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    h2 {
+        margin-bottom: 100px;
+        font-family: $Nexa-Bold;
+        color: $secondary;
+        line-height: 1;
+        small {
+            font-size: 2rem;
+            @include sm {
+                font-size: 3rem;
+            }
+            @include xl {
+                font-size: 4rem;
+            }
+            @include xxl {
+                font-size: 5rem;
+            }
+        }
+        span {
+            font-size: 3rem;
+            @include sm {
+                font-size: 6rem;
+            }
+            @include xl {
+                font-size: 8rem;
+            }
+            @include xxl {
+                font-size: 10rem;
+            }
+        }
+    }
+}

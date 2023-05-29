@@ -1,0 +1,71 @@
+.getinTouch {
+    background-color: $white;
+    height: 100vh;
+    overflow: hidden;
+
+    .eTourContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            @include mainHeading($black);
+            position: relative;
+            z-index: 2;
+            transition: all 0.1s cubic-bezier(1, -0.12, 0.1, 1.16);
+        }
+
+        .circle-btn {
+            display: block;
+            width: 267px;
+            height: 267px;
+            border-radius: 50%;
+            background-color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: $white;
+            position: relative;
+            border: 2px solid #fff;
+            font-family: $Inter;
+            font-weight: 300;
+            font-size: 40px;
+
+             span {
+                width: 267px;
+                height: 267px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 1px solid #FFF;
+                position: relative;
+                z-index: 999;
+            }
+
+            &::before {
+                content: "";
+                width: 267px;
+                height: 267px;
+                position: absolute;
+                background-color: $primary;
+                transition: all 1.2s cubic-bezier(1, -0.12, 0.1, 1.16);
+                transform-origin: center center;
+                visibility: hidden;
+                border-radius: 50%;
+                pointer-events: none;
+                
+            }
+
+            &:hover::before {
+                // width: 110vw;
+                // height: 110vh;
+                visibility: visible;
+                top: 0;
+                transform: translateY(-46%) scale(10);
+            }
+        }
+    }
+}

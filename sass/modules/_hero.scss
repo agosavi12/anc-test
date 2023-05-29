@@ -4,11 +4,56 @@
     overflow: hidden;
 
 
-    .home-carousel {
-        img {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
+    .homeSliderWrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        .home-carousel {
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
         }
     }
+
+    .heroContent {
+        position: relative;
+        z-index: 2;
+
+        h1 {
+            margin-bottom: 100px;
+            font-family: $Nexa-Bold;
+            color: $white;
+            line-height: 1;
+            small {
+                font-size: 2rem;
+                @include sm {
+                    font-size: 3rem;
+                }
+                @include xl {
+                    font-size: 4rem;
+                }
+                @include xxl {
+                    font-size: 5rem;
+                }
+            }
+            span {
+                font-size: 3rem;
+                @include sm {
+                    font-size: 6rem;
+                }
+                @include xl {
+                    font-size: 8rem;
+                }
+                @include xxl {
+                    font-size: 10rem;
+                }
+            }
+        }
+    }
+
 }

@@ -1,0 +1,176 @@
+.footer {
+    position: relative;
+    background-color: $secondary;
+    font-family: $Inter;
+    // margin-top: auto;
+
+    @include sm {
+
+        &::after {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: rgba($color: $white, $alpha: 0.2);
+        }
+    }
+
+
+    .footerTop {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @include md {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        img {
+            max-width: 100px;
+        }
+
+        .utils {
+            height: 15px;
+
+            @include sm {
+                height: auto;
+            }
+        }
+
+        .ft-main {
+            font-size: 5.25vw;
+            @include md {
+                font-size: 2.688vw;
+            }
+            @include lg {
+                font-size: 1.875vw;
+            }
+            
+            ul {
+                li {
+                    line-height: 12.5vw;
+                    @include md {
+                        line-height: 5.375vw;
+                    }
+                    @include lg {
+                        line-height: 3.750vw;
+                    }
+                    a {
+                        color: $white;
+                        transition: all 0.5s;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ft-secondary {
+            ul {
+                li {
+                    font-size: 4.25vw;
+                    line-height: 11.313vw;
+                    @include md {
+                        font-size: 1.542vw;
+                        line-height: 4.385vw;
+                    }
+
+                    @include lg {
+                        font-size: 1.042vw;
+                        line-height: 3.385vw;
+                    }
+                    color: $white;
+                    a {
+                        font-size: 4.625vw;
+                        @include md {
+                            font-size: 1.338vw;
+                        }
+                        @include lg {
+                            font-size: 0.938vw;
+                        }
+                        color: rgba($color: $white, $alpha: 0.6);
+                        transition: all 0.5s;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footerBottom {
+        // padding: 30px 0;
+        padding: 0 16px;
+        border-top: 1px solid rgba($color: $white, $alpha: 0.2);
+
+        .row {
+            margin-left: -16px;
+            margin-right: -16px;
+            
+
+            @include md {
+                margin-right: inherit;
+                margin-left: inherit;
+            }
+        }
+
+        .copyright {
+            color: $white;
+            font-weight: 300;
+            font-size: 12px;
+            padding: 10px 0;
+
+            @include lg {
+                font-size: 16px;
+                padding: 0;
+            }
+
+             a {
+                color: $primary;
+                text-decoration: underline;
+             }
+        }
+
+        .socialLinks {
+            border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+
+            @include md {
+                border-bottom: none;
+            }
+            
+            ul {
+                li {
+                    flex: 1;
+                    &:not(:nth-child(1)) {
+                        border-left: 1px solid rgba($color: $white, $alpha: 0.2);
+                    }
+                    a {
+                        display: block;
+                        padding: 20px 0;
+                        text-align: center;
+                        font-size: 12px;
+                        font-family: $Inter;
+                        font-weight: 300;
+                        color: $white;
+                        transition: all 0.5s;
+
+                        @include lg {
+                            font-size: 16px;
+                            padding: 30px 0;
+                        }
+
+                        &:hover {
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

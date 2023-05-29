@@ -1,0 +1,33 @@
+.e-tour {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    .sectionBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .overlay {
+            @include mainHeading;
+        }
+
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+
+    .container {
+        position: relative;
+        height: 100%;
+        h2 {
+            @include mainHeading;
+        }
+        p {
+            @include subHeading;
+        }
+    }
+}

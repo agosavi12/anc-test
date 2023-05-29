@@ -21,13 +21,28 @@
           class="col-10 logo d-flex justify-content-end align-items-center gap-5"
         >
           <ul class="d-flex gap-5 d-none d-xl-flex">
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#">GALLERY / E-TOUR</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
           <div class="menuBtnGroup">
-            <button class="menuBtn">MENU</button>
+            <button class="menuBtn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 12V10L0 0V2L10 7L20 12ZM0 6V4L20 14V16L10 11L0 6ZM20 18V20L10 15L0 10V8L20 18Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
             <button class="enquireBtn">ENQUIRE</button>
           </div>
         </nav>
@@ -62,35 +77,58 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero d-flex">
         <!-- Slider main container -->
-        <div class="home-carousel owl-carousel owl-theme">
-          <div class="item">
-            <picture>
-              <source
-                srcset="./images/banner-1.png"
-                media="(min-width: 1024px)"
-              />
-              <img
-                src="./images/banner-1.png"
-                class="img-fluid"
-                alt="banner 1"
-              />
-            </picture>
-          </div>
+        <div class="homeSliderWrapper">
+          <div class="home-carousel owl-carousel owl-theme">
+            <div class="item">
+              <picture>
+                <source
+                  srcset="./images/banner-1.png"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="./images/banner-1.png"
+                  class="img-fluid"
+                  alt="banner 1"
+                />
+              </picture>
+            </div>
 
-          <div class="item">
-            <picture>
-              <source
-                srcset="./images/banner-2.png"
-                media="(min-width: 1024px)"
-              />
-              <img
-                src="./images/banner-2.png"
-                class="img-fluid"
-                alt="banner 2"
-              />
-            </picture>
+            <div class="item">
+              <picture>
+                <source
+                  srcset="./images/banner-2.png"
+                  media="(min-width: 1024px)"
+                />
+                <img
+                  src="./images/banner-2.png"
+                  class="img-fluid"
+                  alt="banner 2"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="heroContent container d-flex flex-column justify-content-end"
+        >
+          <h1 class="d-flex flex-column">
+            <small>WE ARE</small>
+            <span>PARTICULAR</span>
+          </h1>
+        </div>
+      </section>
+
+      <!--about-->
+      <section class="about" id="about">
+        <div class="container px-0">
+          <div class="col-lg-9 m-auto">
+            <h2 class="d-flex flex-column">
+              <small>WE ARE</small>
+              <span>PARTICULAR</span>
+            </h2>
           </div>
         </div>
       </section>
@@ -100,10 +138,10 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 op-left">
-              <h2>Our <br />Projects</h2>
+              <h2 class="wow fadeInUp">Our <br />Projects</h2>
             </div>
             <div class="col-lg-6">
-              <p>
+              <p class="wow fadeInUp">
                 Today, we maintain a portfolio of high-quality commercial,
                 residential, and mixed-use properties totalling more than 11.5
                 million square feet. Our clients span the area’s top industries,
@@ -116,7 +154,7 @@
           <div class="op-slider">
             <div class="container">
               <!--filters-->
-              <div id="project-terms" class="project-terms">
+              <div id="project-terms" class="project-terms d-none d-lg-block">
                 <a id="all" class="btn btn-default active" href="#">All</a>
                 <a id="residential" class="btn btn-default" href="#"
                   >Residential</a
@@ -142,8 +180,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2>ANP Ultimus</h2>
-                  <p>
+                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
+                  <p class="wow fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -166,8 +204,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2>ANP Ultimus</h2>
-                  <p>
+                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
+                  <p class="wow fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -190,8 +228,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2>ANP Ultimus</h2>
-                  <p>
+                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
+                  <p class="wow fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -214,8 +252,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2>ANP Ultimus</h2>
-                  <p>
+                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
+                  <p class="wow fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -238,8 +276,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2>ANP Ultimus</h2>
-                  <p>
+                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
+                  <p class="wow fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -262,8 +300,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2>ANP Ultimus</h2>
-                  <p>
+                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
+                  <p class="wow fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -286,8 +324,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2>ANP Ultimus</h2>
-                  <p>
+                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
+                  <p class="wow fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -310,8 +348,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2>ANP Ultimus</h2>
-                  <p>
+                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
+                  <p class="wow fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -329,7 +367,110 @@
           </div>
         </div>
       </section>
+
+      <!--ETour-->
+      <section class="e-tour">
+        <div class="sectionBg">
+          <picture>
+            <source
+              srcset="./images/etour-bg.png"
+              media="(min-width: 1024px)"
+            />
+            <img src="./images/etour-bg.png" class="img-fluid" alt="banner 1" />
+          </picture>
+        </div>
+        <div
+          class="container d-flex align-items-center justify-content-center flex-column"
+        >
+          <h2 class="wow fadeInUp">E-Tour</h2>
+          <p class="wow fadeInUp">Experience your Dream Space</p>
+        </div>
+      </section>
+
+      <!-- Get in touch -->
+      <section
+        class="getinTouch eTour position-relative d-flex justify-content-center align-items-center"
+      >
+        <div class="eTourContent position-relative text-center">
+          <h2>
+            GET IN TOUCH<br />
+            WITH US
+          </h2>
+
+          <a href="tel: 9920635823" class="circle-btn">
+            <span>TALK TO US</span>
+          </a>
+        </div>
+      </section>
     </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="col footerTop">
+        <div class="container">
+          <img src="./images/ANP-Logo.png" class="img-fluid mb-5" alt="" />
+          <div class="row">
+            <div class="col-6 col-md-3 ft-main">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Gallery / E-tour</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-2 ft-secondary">
+              <ul>
+                <li>Other Links</li>
+                <li><a href="#">NRI Corner</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">CRM</a></li>
+              </ul>
+            </div>
+            <div class="col-md-1 utils"></div>
+            <div class="col-md-1 utils"></div>
+            <div class="col-6 col-md-3 ft-secondary">
+              <ul>
+                <li>ANP Corp Projects</li>
+                <li><a href="#">Projects in Balewadi</a></li>
+                <li><a href="#">Projects in Wakad</a></li>
+                <li><a href="#">Projects in Punawale</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-2 ft-secondary">
+              <ul>
+                <li>Typology</li>
+                <li><a href="#">1BHK Flats in Pune</a></li>
+                <li><a href="#">2BHK Flats in Pune</a></li>
+                <li><a href="#">3BHK Flats in Pune</a></li>
+                <li><a href="#">4BHK Flats in Pune</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-md-0 footerBottom">
+        <div class="row">
+          <div class="col-md-6 p-0 socialLinks order-md-2">
+            <ul class="d-flex">
+              <li><a href="#" target="_blank">LINKEDIN</a></li>
+              <li><a href="#" target="_blank">INSTAGRAM</a></li>
+              <li><a href="#" target="_blank">TWITTER</a></li>
+              <li><a href="#" target="_blank">FACEBOOK</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 d-flex align-items-center">
+            <div
+              class="d-flex w-100 justify-content-between justify-content-md-evenly copyright"
+            >
+              <p>&copy; Copyright 2023 ANP Corp</p>
+              <p>Website by <a href="#" target="_blank">Digitalvibe</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!--jQuery, Bootstrap JS Files-->
     <script
@@ -343,6 +484,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/vendors/owl.carousel.min.js"></script>
+    <script src="./js/vendors/wow.js"></script>
     <script src="./js/index.js" defer></script>
   </body>
 </html>
