@@ -1,6 +1,7 @@
 .about {
+    display: table;
+    width: 100%;
     background-color: $white;
-    min-height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -38,5 +39,53 @@
                 font-size: 10rem;
             }
         }
+    }
+
+    .boxContent-1 {
+        margin: 0 auto;
+        font-family: $GothamBook;
+        min-width: 300px;
+        max-width: 380px;
+        h3 {
+            margin-bottom: 2rem;
+            color: #233342;
+            line-height: 1.5;
+            span {
+                font-family: $Nexa-Bold;
+                
+            }
+            @include lg {
+                font-size: 1.5rem;
+                span {
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+                
+            }
+        }
+
+        h4 {
+            color: #666666;
+            line-height: 1.5;
+            @include lg {
+                font-size: 1.2rem;
+                span {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                
+            }
+        }
+        
+    }
+
+    .boxContent-2 { 
+        float: right;
+        margin-top: -24%;
+        margin-right: -10%;
+    }
+
+    .boxContent-3 { 
+        margin-top: 100px;
     }
 }
