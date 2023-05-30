@@ -1,3 +1,14 @@
+gsap.from('.hero h1', {
+  delay: 1,
+  duration: 3,
+  x: 300,
+  ease: 'power2.out',
+  opacity: 0,
+  scale: 3,
+});
+
+AOS.init();
+
 const body = document.querySelector('body');
 const header = document.querySelector('header');
 const menuBtn = document.querySelector('.menuBtn');
@@ -19,8 +30,6 @@ menuBtn.addEventListener('click', function () {
 menuClose.addEventListener('click', function () {
   menu.classList.add('d-none');
 });
-
-new WOW().init();
 
 $('.circle-btn').on('mouseenter', function () {
   console.log('hello');
@@ -44,8 +53,8 @@ $('.home-carousel').owlCarousel({
   nav: false,
   dots: false,
   items: 1,
-  animateOut: 'fadeOut',
-  animateIn: 'fadeIn',
+  // animateOut: 'fadeOut',
+  // animateIn: 'fadeIn',
 });
 
 // Our Projects Slider
@@ -107,10 +116,11 @@ $(window).on('load', function () {
       0: {
         items: 1,
         nav: true,
-        stagePadding: 30,
+        margin: 0,
+        stagePadding: 20,
       },
       600: {
-        items: 2,
+        items: 1,
         nav: false,
         margin: 0,
         stagePadding: 50,

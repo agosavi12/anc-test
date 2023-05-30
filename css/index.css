@@ -10966,6 +10966,7 @@ img {
 header {
   font-family: "GothamMedium", sans-serif;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease-in-out;
 }
 header .menuBtn {
   width: 50px;
@@ -11279,19 +11280,56 @@ header.scrolled {
   width: 100%;
   background-color: #fff;
   padding-top: 50px;
-  padding-bottom: 50px;
+  background-image: url("../images/about-bg1.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+@media (min-width: 576px) {
+  .about {
+    background-size: 50%;
+  }
 }
 @media (min-width: 992px) {
   .about {
+    background-size: 32%;
     padding-top: 100px;
-    padding-bottom: 100px;
+  }
+}
+.about .slash {
+  position: absolute;
+  left: 10%;
+  opacity: 0.5 !important;
+  visibility: hidden;
+}
+@media (min-width: 768px) {
+  .about .slash {
+    visibility: visible;
+    width: 25%;
+    left: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  .about .slash {
+    width: 25%;
+  }
+}
+@media (min-width: 1600px) {
+  .about .slash {
+    width: 25%;
+    left: 10%;
   }
 }
 .about h2, .about .h2 {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-family: "Nexa-Bold", sans-serif;
   color: #233342;
   line-height: 1;
+}
+@media (min-width: 576px) {
+  .about h2, .about .h2 {
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
 }
 .about h2 small, .about .h2 small, .about h2 .small, .about .h2 .small {
   font-size: 2rem;
@@ -11330,36 +11368,60 @@ header.scrolled {
   }
 }
 .about .boxContent-1 {
-  margin: 0 auto;
   font-family: "GothamBook", sans-serif;
   min-width: 300px;
   max-width: 380px;
+  margin-bottom: 50px;
+  color: #233342;
+}
+@media (min-width: 992px) {
+  .about .boxContent-1 {
+    margin: 0 auto;
+    min-width: 200px;
+    max-width: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  .about .boxContent-1 {
+    min-width: 300px;
+    max-width: 380px;
+  }
 }
 .about .boxContent-1 h3, .about .boxContent-1 .h3 {
   margin-bottom: 2rem;
-  color: #233342;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
-.about .boxContent-1 h3 span, .about .boxContent-1 .h3 span {
-  font-family: "Nexa-Bold", sans-serif;
-}
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .about .boxContent-1 h3, .about .boxContent-1 .h3 {
     font-size: 1.5rem;
   }
+}
+.about .boxContent-1 h3 span, .about .boxContent-1 .h3 span {
+  font-family: "Nexa-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+@media (min-width: 1200px) {
   .about .boxContent-1 h3 span, .about .boxContent-1 .h3 span {
     font-size: 2rem;
-    font-weight: 700;
   }
 }
 .about .boxContent-1 h4, .about .boxContent-1 .h4 {
   color: #666666;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .about .boxContent-1 h4, .about .boxContent-1 .h4 {
     font-size: 1.2rem;
   }
+}
+.about .boxContent-1 h4 span, .about .boxContent-1 .h4 span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
   .about .boxContent-1 h4 span, .about .boxContent-1 .h4 span {
     font-size: 1.5rem;
     font-weight: 700;
@@ -11367,11 +11429,172 @@ header.scrolled {
 }
 .about .boxContent-2 {
   float: right;
-  margin-top: -24%;
-  margin-right: -10%;
+  width: 100%;
+}
+.about .boxContent-2 img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: all 0.5s ease-in-out;
+}
+.about .boxContent-2 img:hover {
+  filter: grayscale(0);
+}
+@media (min-width: 576px) {
+  .about .boxContent-2 {
+    width: auto;
+    margin-top: -25%;
+    margin-right: -15%;
+  }
+  .about .boxContent-2 img {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .about .boxContent-2 {
+    margin-top: -35%;
+    margin-right: -30%;
+  }
+  .about .boxContent-2 img {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .about .boxContent-2 {
+    margin-top: -35%;
+    margin-right: -20%;
+  }
+  .about .boxContent-2 img {
+    width: 100%;
+  }
+}
+@media (min-width: 1600px) {
+  .about .boxContent-2 {
+    margin-top: -24%;
+    margin-right: -10%;
+  }
 }
 .about .boxContent-3 {
   margin-top: 100px;
+  width: 100%;
+}
+.about .boxContent-3 img {
+  filter: grayscale(1);
+  transition: all 0.5s ease-in-out;
+}
+.about .boxContent-3 img:hover {
+  filter: grayscale(0);
+}
+@media (min-width: 576px) {
+  .about .boxContent-3 {
+    margin-right: 100px;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .about .boxContent-3 {
+    margin-right: 100px;
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .about .boxContent-3 {
+    margin-left: 14px;
+  }
+}
+.about .about-extra {
+  position: relative;
+  margin-top: 100px;
+}
+@media (min-width: 576px) {
+  .about .about-extra {
+    margin-top: 170px;
+  }
+}
+@media (min-width: 768px) {
+  .about .about-extra {
+    margin-top: 170px;
+  }
+}
+.about .about-extra .aboutbg-group {
+  position: relative;
+  overflow: hidden;
+}
+.about .about-extra .aboutbg-group picture img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 1.2s ease-in-out;
+}
+.about .about-extra .aboutbg-group:hover img {
+  transform: scale(1.2);
+}
+.about .about-extra .box-group {
+  position: relative;
+}
+@media (min-width: 576px) {
+  .about .about-extra .box-group {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+.about .about-extra .box-group .box {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #233342;
+  line-height: 1.2;
+}
+@media (min-width: 576px) {
+  .about .about-extra .box-group .box {
+    max-width: 170px;
+    height: 170px;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .about .about-extra .box-group .box {
+    max-width: 222px;
+    height: 222px;
+  }
+}
+@media (min-width: 1200px) {
+  .about .about-extra .box-group .box {
+    max-width: 240px;
+    height: 240px;
+  }
+}
+@media (min-width: 1600px) {
+  .about .about-extra .box-group .box {
+    max-width: 345px;
+    height: 345px;
+    font-size: 18px;
+  }
+}
+.about .about-extra .box-group .box span {
+  font-family: "Nexa-Light", sans-serif;
+  font-size: 4.5rem;
+  font-size: 3rem;
+}
+@media (min-width: 1600px) {
+  .about .about-extra .box-group .box span {
+    font-size: 4.5rem;
+  }
+}
+.about .about-extra .box-group .box:nth-child(1) {
+  background-color: #F6F6F6;
+}
+.about .about-extra .box-group .box:nth-child(3) {
+  background-color: #FFFFFF;
+}
+.about .about-extra .box-group .box:nth-child(4) {
+  background-color: #C05C59;
+  color: #FFF;
 }
 
 .our-projects {
@@ -11452,6 +11675,9 @@ header.scrolled {
 }
 .our-projects .container .op-slider .hide {
   display: none;
+}
+.our-projects .container .op-slider .project-terms {
+  margin-bottom: 50px;
 }
 .our-projects .container .op-slider .project-terms a {
   border: none;
@@ -11609,6 +11835,7 @@ header.scrolled {
   width: 100%;
   height: 100vh;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .e-tour .sectionBg {
   position: absolute;
@@ -11650,10 +11877,15 @@ header.scrolled {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 1.2s ease-in-out;
+}
+.e-tour .sectionBg:hover img {
+  scale: 1.2;
 }
 .e-tour .container {
   position: relative;
   height: 100%;
+  pointer-events: none;
 }
 .e-tour .container h2, .e-tour .container .h2 {
   font-size: 2.5rem;

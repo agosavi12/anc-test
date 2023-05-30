@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANC CORP</title>
-    <link rel="stylesheet" href="./css/vendors/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/vendors/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/vendors/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
@@ -124,8 +124,16 @@
       <!--about-->
       <section class="about" id="about">
         <div class="container">
-          <div class="col-lg-9 m-auto">
-            <h2 class="d-flex flex-column">
+          <div class="col-lg-10 m-auto">
+            <div
+              class="slash"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+            >
+              <img src="./images/slash.png" class="img-fluid" alt="" />
+            </div>
+
+            <h2 class="d-flex flex-column" data-aos="fade-down">
               <small>WE ARE</small>
               <span>PARTICULAR</span>
             </h2>
@@ -146,12 +154,53 @@
               </h4>
             </div>
 
-            <div class="boxContent-2">
+            <div
+              class="boxContent-2"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <img src="./images/item-1.png" class="img-fluid" alt="" />
             </div>
 
-            <div class="boxContent-3">
+            <div
+              class="boxContent-3"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <img src="./images/item-2.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-10 offset-lg-2 about-extra">
+          <div class="aboutbg-group">
+            <picture>
+              <source
+                srcset="./images/about-bg.png"
+                media="(min-width: 1024px)"
+              />
+              <img
+                src="./images/about-bg.png"
+                class="img-fluid"
+                alt="banner 1"
+              />
+            </picture>
+          </div>
+          <div class="col-lg-5 box-group">
+            <div class="row m-0">
+              <div class="col-12 col-sm-6 box">
+                <span class="numscroller" data-max="26" data-delay="10">0</span>
+                Years in The Industry
+              </div>
+              <div class="col-12 col-sm-6 box d-none d-sm-block"></div>
+              <div class="col-12 col-sm-6 box">
+                <span class="numscroller" data-max="25">0</span>
+                Projects Delivered On Time
+              </div>
+              <div class="col-12 col-sm-6 box">
+                <span class="numscroller" data-max="2500">0 </span>
+                Happy Customers
+              </div>
             </div>
           </div>
         </div>
@@ -161,11 +210,15 @@
       <section class="our-projects" id="projects">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6 op-left">
-              <h2 class="wow fadeInUp">Our <br />Projects</h2>
+            <div
+              class="col-lg-6 op-left"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="fadeInUp">Our <br />Projects</h2>
             </div>
-            <div class="col-lg-6">
-              <p class="wow fadeInUp">
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+              <p class="fadeInUp">
                 Today, we maintain a portfolio of high-quality commercial,
                 residential, and mixed-use properties totalling more than 11.5
                 million square feet. Our clients span the area’s top industries,
@@ -175,7 +228,7 @@
             </div>
           </div>
 
-          <div class="op-slider">
+          <div class="op-slider" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
               <!--filters-->
               <div id="project-terms" class="project-terms d-none d-lg-block">
@@ -204,8 +257,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
-                  <p class="wow fadeInUp">
+                  <h2 class="fadeInUp">ANP Ultimus</h2>
+                  <p class="fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -228,8 +281,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
-                  <p class="wow fadeInUp">
+                  <h2 class="fadeInUp">ANP Ultimus</h2>
+                  <p class="fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -252,8 +305,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
-                  <p class="wow fadeInUp">
+                  <h2 class="fadeInUp">ANP Ultimus</h2>
+                  <p class="fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -276,8 +329,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
-                  <p class="wow fadeInUp">
+                  <h2 class="fadeInUp">ANP Ultimus</h2>
+                  <p class="fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -300,8 +353,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
-                  <p class="wow fadeInUp">
+                  <h2 class="fadeInUp">ANP Ultimus</h2>
+                  <p class="fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -324,8 +377,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
-                  <p class="wow fadeInUp">
+                  <h2 class="fadeInUp">ANP Ultimus</h2>
+                  <p class="fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -348,8 +401,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
-                  <p class="wow fadeInUp">
+                  <h2 class="fadeInUp">ANP Ultimus</h2>
+                  <p class="fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -372,8 +425,8 @@
                   />
                 </div>
                 <div class="projectInfo">
-                  <h2 class="wow fadeInUp">ANP Ultimus</h2>
-                  <p class="wow fadeInUp">
+                  <h2 class="fadeInUp">ANP Ultimus</h2>
+                  <p class="fadeInUp">
                     The project features an extraordinary orientation of towers
                     that facilitates an all-encompassing lifestyle, giving you a
                     prestigious address to call your home.
@@ -406,8 +459,12 @@
         <div
           class="container d-flex align-items-center justify-content-center flex-column"
         >
-          <h2 class="wow fadeInUp">E-Tour</h2>
-          <p class="wow fadeInUp">Experience your Dream Space</p>
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            E-Tour
+          </h2>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+            Experience your Dream Space
+          </p>
         </div>
       </section>
 
@@ -416,12 +473,18 @@
         class="getinTouch eTour position-relative d-flex justify-content-center align-items-center"
       >
         <div class="eTourContent position-relative text-center">
-          <h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000">
             GET IN TOUCH<br />
             WITH US
           </h2>
 
-          <a href="tel: 9920635823" class="circle-btn">
+          <a
+            href="tel: 9920635823"
+            class="circle-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <span>TALK TO US</span>
           </a>
         </div>
@@ -507,8 +570,10 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/vendors/owl.carousel.min.js"></script>
-    <script src="./js/vendors/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="./js/vendors/numscroller-1.0.js"></script>
     <script src="./js/index.js" defer></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 header {
     font-family: $GothamMedium;
     border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+    transition: all 0.5s ease-in-out;
     
     .menuBtn {
         width: 50px;
