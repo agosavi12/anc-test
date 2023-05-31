@@ -70,8 +70,8 @@ $('.home-carousel').owlCarousel({
   nav: false,
   dots: false,
   items: 1,
-  // animateOut: 'fadeOut',
-  // animateIn: 'fadeIn',
+  animateOut: 'fadeOut',
+  animateIn: 'fadeIn',
 });
 
 // Our Projects Slider
