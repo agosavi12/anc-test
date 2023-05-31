@@ -39,5 +39,27 @@
         p {
             @include subHeading;
         }
+
+        .ctaWrapper {
+            position: relative;
+            margin-top: 50px;
+            pointer-events: all;
+            .cta {
+                @include cta($bg: $primary);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                display: block;
+                width: 60px;
+                height: 1px;
+                background-color: $white;
+                z-index: 2;
+
+            }
+        }
     }
 }

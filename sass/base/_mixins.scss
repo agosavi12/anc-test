@@ -98,3 +98,25 @@
     height: 100%;
     background-color: rgba($color: #000000, $alpha: 0.3);
 }
+
+
+@mixin cta($bg: $primary, $color: $white, $width: 266px) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $width;
+    height: 60px;
+    background-color: $bg;
+    color: $color;
+    outline: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: $Inter;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 92% 0, 100% 30%, 100% 100%, 100% 100%, 8% 100%, 0 70%, 0 0);
+
+    
+}

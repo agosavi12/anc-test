@@ -50,6 +50,16 @@ header.scrolled {
     background-color: $secondary;
     z-index: 999999;
     transition: all 1s linear;
+    // background-image: url('../../images/slash.png');
+    // background-repeat: no-repeat;
+    // background-position: bottom left;
+
+    .slash {    
+        position: absolute;
+        bottom: -45%;
+        left: 7%;
+        opacity: 0.5;
+    }
 
     &_inner {
         width: 100%;
@@ -59,26 +69,88 @@ header.scrolled {
     &_close {
         position: absolute;
         top: 50px;
+        left: 10%;
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        border: 2px solid rgba($color: $white, $alpha: 0.6)
+        border: 2px solid rgba($color: $white, $alpha: 0.6);
+        &:hover {
+            background-color: $primary;
+        }
     } 
 
     &_left {
-        width: 60%;
+        width: 100%;
         // height: 100vh;
         float: left;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
 
-        .menu_main {
-            font-family: $GothamBold;
-            font-size: 36px;
-            line-height: 2;
+        @include sm {
+            width: 60%;
+        }
 
+        .mainMenu {
             ul {
                 li {
                     a {
+                        display: table;
+                        font-family: $GothamBold;
+                        font-size: 1.8rem;
                         color: $white;
+                        line-height: 4.5rem;
+
+                        @include xl {
+                            font-size: 2.25rem;
+                        }
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 0px;
+                            height: 2px;
+                            background-color: $primary;
+                            transition: all 0.5s;
+                        }
+
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .menuSocial {
+            position: relative;
+            top: 10rem;
+            ul {
+                li {
+                    display: inline-block;
+                    font-family: $GothamBook;
+                    font-size: 1.25rem;
+                    line-height: 2.5;
+                    &:not(:last-child) {
+                        margin-right: 2rem;
+                    }
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .secondaryMeny {
+            ul {
+                li{
+                    a {
+                        font-family: $GothamBook;
+                        font-size: 1.25rem;
+                        color: $white;
+                        line-height: 4.5rem;
                     }
                 }
             }
@@ -89,6 +161,48 @@ header.scrolled {
         width: 40%;
         background-color: $primary;
         height: 100vh;
-        float: left;
+        float: right;
+
+        .menuContent {
+            min-width: 85%;
+
+            @include lg {
+                min-width: 320px;
+            }
+
+            h3 {
+                font-family: $GothamBold;
+                font-size: 2.25rem;
+                color: $white;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-family: $GothamBook;
+                font-size: 1.25rem;
+                color: $white;
+                line-height: 1.5;
+            }
+            .ctaWrapper {
+                position: relative;
+                .cta {
+                    @include cta($bg: $secondary);
+                    margin-top: 50px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: -30px;
+                    display: block;
+                    width: 60px;
+                    height: 1px;
+                    background-color: $white;
+                    z-index: 2;
+
+                }
+            }
+        }
     }
 }

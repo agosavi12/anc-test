@@ -7,6 +7,15 @@ gsap.from('.hero h1', {
   scale: 3,
 });
 
+gsap.from('.socialNav li', {
+  delay: 3,
+  duration: 1,
+  x: 200,
+  ease: 'power2.out',
+  opacity: 0,
+  stagger: 0.2,
+});
+
 AOS.init();
 
 const body = document.querySelector('body');
@@ -25,6 +34,14 @@ window.addEventListener('scroll', function () {
 
 menuBtn.addEventListener('click', function () {
   menu.classList.remove('d-none');
+
+  // gsap.from('mainMenu li', {
+  //   delay: 1,
+  //   duration: 1,
+  //   y: -20,
+  //   ease: 'power2.out',
+  //   opacity: 0,
+  // });
 });
 
 menuClose.addEventListener('click', function () {
@@ -90,6 +107,8 @@ function showProjectsbyCat(cat) {
 }
 
 $(window).on('load', function () {
+  $('.counter').countUp();
+
   //Click event for filters
   $('#project-terms a').click(function (e) {
     e.preventDefault();

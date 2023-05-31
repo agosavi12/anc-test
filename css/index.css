@@ -11007,6 +11007,12 @@ header.scrolled {
   z-index: 999999;
   transition: all 1s linear;
 }
+.menu .slash {
+  position: absolute;
+  bottom: -45%;
+  left: 7%;
+  opacity: 0.5;
+}
 .menu_inner {
   width: 100%;
   height: 100vh;
@@ -11014,28 +11020,131 @@ header.scrolled {
 .menu_close {
   position: absolute;
   top: 50px;
+  left: 10%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.6);
 }
+.menu_close:hover {
+  background-color: #AC3B38;
+}
 .menu_left {
-  width: 60%;
+  width: 100%;
   float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.menu_left .menu_main {
+@media (min-width: 576px) {
+  .menu_left {
+    width: 60%;
+  }
+}
+.menu_left .mainMenu ul li a {
+  display: table;
   font-family: "GothamBold", sans-serif;
-  font-size: 36px;
-  line-height: 2;
-}
-.menu_left .menu_main ul li a {
+  font-size: 1.8rem;
   color: #fff;
+  line-height: 4.5rem;
+}
+@media (min-width: 1200px) {
+  .menu_left .mainMenu ul li a {
+    font-size: 2.25rem;
+  }
+}
+.menu_left .mainMenu ul li a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #AC3B38;
+  transition: all 0.5s;
+}
+.menu_left .mainMenu ul li a:hover::after {
+  width: 100%;
+}
+.menu_left .menuSocial {
+  position: relative;
+  top: 10rem;
+}
+.menu_left .menuSocial ul li {
+  display: inline-block;
+  font-family: "GothamBook", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.5;
+}
+.menu_left .menuSocial ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+.menu_left .menuSocial ul li a {
+  color: #fff;
+}
+.menu_left .secondaryMeny ul li a {
+  font-family: "GothamBook", sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 4.5rem;
 }
 .menu_right {
   width: 40%;
   background-color: #AC3B38;
   height: 100vh;
-  float: left;
+  float: right;
+}
+.menu_right .menuContent {
+  min-width: 85%;
+}
+@media (min-width: 992px) {
+  .menu_right .menuContent {
+    min-width: 320px;
+  }
+}
+.menu_right .menuContent h3, .menu_right .menuContent .h3 {
+  font-family: "GothamBold", sans-serif;
+  font-size: 2.25rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.menu_right .menuContent p {
+  font-family: "GothamBook", sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.menu_right .menuContent .ctaWrapper {
+  position: relative;
+}
+.menu_right .menuContent .ctaWrapper .cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 266px;
+  height: 60px;
+  background-color: #233342;
+  color: #fff;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-clip-path: polygon(0 0, 92% 0, 100% 30%, 100% 100%, 100% 100%, 8% 100%, 0 70%, 0 0);
+          clip-path: polygon(0 0, 92% 0, 100% 30%, 100% 100%, 100% 100%, 8% 100%, 0 70%, 0 0);
+  margin-top: 50px;
+}
+.menu_right .menuContent .ctaWrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .footer {
@@ -11273,6 +11382,36 @@ header.scrolled {
   .hero .heroContent h1 span, .hero .heroContent .h1 span {
     font-size: 10rem;
   }
+}
+.hero .heroContent .socialNav {
+  position: relative;
+  top: -80px;
+}
+@media (min-width: 768px) {
+  .hero .heroContent .socialNav {
+    top: 0;
+  }
+}
+.hero .heroContent .socialNav ul {
+  display: table;
+  float: right;
+}
+.hero .heroContent .socialNav ul li {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.hero .heroContent .socialNav ul li:hover {
+  background-color: #AC3B38;
+}
+.hero .heroContent .socialNav ul li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .about {
@@ -11829,6 +11968,41 @@ header.scrolled {
 .our-projects .container .op-slider .owl-carousel .owl-nav .owl-next img {
   transform: rotate(180deg);
 }
+.our-projects .container .ctaWrapper {
+  position: relative;
+  display: table;
+  margin: 50px auto 0;
+}
+.our-projects .container .ctaWrapper .cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 266px;
+  height: 60px;
+  background-color: #AC3B38;
+  color: #fff;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-clip-path: polygon(0 0, 92% 0, 100% 30%, 100% 100%, 100% 100%, 8% 100%, 0 70%, 0 0);
+          clip-path: polygon(0 0, 92% 0, 100% 30%, 100% 100%, 100% 100%, 8% 100%, 0 70%, 0 0);
+}
+.our-projects .container .ctaWrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+  z-index: 2;
+}
 
 .e-tour {
   position: relative;
@@ -11924,6 +12098,41 @@ header.scrolled {
   .e-tour .container p {
     font-size: 2.5rem;
   }
+}
+.e-tour .container .ctaWrapper {
+  position: relative;
+  margin-top: 50px;
+  pointer-events: all;
+}
+.e-tour .container .ctaWrapper .cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 266px;
+  height: 60px;
+  background-color: #AC3B38;
+  color: #fff;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-clip-path: polygon(0 0, 92% 0, 100% 30%, 100% 100%, 100% 100%, 8% 100%, 0 70%, 0 0);
+          clip-path: polygon(0 0, 92% 0, 100% 30%, 100% 100%, 100% 100%, 8% 100%, 0 70%, 0 0);
+}
+.e-tour .container .ctaWrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .getinTouch {

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANC CORP</title>
+    <link rel="stylesheet" href="./css/vendors/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/vendors/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/vendors/owl.theme.default.min.css" />
@@ -23,7 +24,7 @@
           <ul class="d-flex gap-5 d-none d-xl-flex">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#">GALLERY / E-TOUR</a></li>
+            <li><a href="#gallery">GALLERY / E-TOUR</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
           <div class="menuBtnGroup">
@@ -51,27 +52,98 @@
 
     <!--MENU-->
     <div class="menu d-none">
-      <button class="menu_close">menu</button>
+      <div class="slash">
+        <img src="./images/slash.png" class="img-fluid" alt="" />
+      </div>
+      <button class="menu_close">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.7783 1.63589L14.3641 0.22168L8.00012 6.58562L1.63618 0.22168L0.22197 1.63589L6.58591 7.99983L0.221924 14.3638L1.63614 15.778L8.00012 9.41405L14.3641 15.778L15.7783 14.3638L9.41433 7.99983L15.7783 1.63589Z"
+            fill="white"
+            fill-opacity="0.6"
+          />
+        </svg>
+      </button>
       <div class="menu_inner">
-        <div class="menu_left">
-          <div class="menu_main">
-            <ul>
-              <li class="animated fadeInDown delay-a1">
-                <a href="#">About</a>
-              </li>
-              <li class="animated fadeInDown delay-a2">
-                <a href="#">Projects</a>
-              </li>
-              <li class="animated fadeInDown delay-a3">
-                <a href="#">Gallery/E-tour</a>
-              </li>
-              <li class="animated fadeInDown delay-a4">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
+        <div class="col menu_left">
+          <div class="row">
+            <div class="col-1 col-sm-2"></div>
+            <div class="col-6 mainMenu">
+              <ul>
+                <li class="animated fadeInDown delay-a1">
+                  <a href="#">About</a>
+                </li>
+                <li class="animated fadeInDown delay-a2">
+                  <a href="#">Projects</a>
+                </li>
+                <li class="animated fadeInDown delay-a3">
+                  <a href="#">Gallery/E-Tour</a>
+                </li>
+                <li class="animated fadeInDown delay-a4">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 secondaryMeny">
+              <ul>
+                <li class="animated fadeInDown delay-a1">
+                  <a href="#">NRI Corner</a>
+                </li>
+                <li class="animated fadeInDown delay-a2">
+                  <a href="#">Careers</a>
+                </li>
+                <li class="animated fadeInDown delay-a3">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="animated fadeInDown delay-a4">
+                  <a href="#">CRM</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-2"></div>
+            <div class="col-8 menuSocial">
+              <ul>
+                <li class="animated fadeInUp delay-a1">
+                  <a href="#">LinkedIn</a>
+                </li>
+                <li class="animated fadeInUp delay-a2">
+                  <a href="#">Instagram</a>
+                </li>
+                <li class="animated fadeInUp delay-a3">
+                  <a href="#">Facebook</a>
+                </li>
+                <li class="animated fadeInUp delay-a4">
+                  <a href="#">Twitter</a>
+                </li>
+                <li class="animated fadeInUp delay-a5">
+                  <a href="#">YouTube</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="menu_right"></div>
+        <div class="col menu_right d-flex align-items-center d-none d-sm-flex">
+          <div class="col-5 offset-1 menuContent animated fadeInRight delay-a2">
+            <h3>Let’s Find Your Comfort House!</h3>
+            <p>
+              Find Comfort in the house with us, want to find a home? We are
+              ready to help you wholeheartedly based on what you need
+            </p>
+
+            <div class="ctaWrapper">
+              <a href="#" class="cta">VIEW ALL PRODUCTS</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -114,6 +186,105 @@
         <div
           class="heroContent container d-flex flex-column justify-content-end"
         >
+          <div class="socialNav">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><svg
+                    width="12"
+                    height="24"
+                    viewBox="0 0 12 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.88 23.2398H7.51001V11.6398H10.79L11.14 7.74976H7.56V5.53976C7.56 4.62976 7.74001 4.25977 8.63 4.25977H11.14V0.259766H7.93002C4.48002 0.259766 2.93002 1.77976 2.93002 4.68976V7.77975H0.52002V11.7198H2.93002L2.88 23.2398Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.09 15.54H11.15V28.26H15.09V15.54Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M13.1 13.8698C13.5656 13.8738 14.0219 13.7393 14.411 13.4835C14.8 13.2277 15.1044 12.8621 15.2853 12.4331C15.4662 12.004 15.5156 11.5309 15.4272 11.0738C15.3388 10.6166 15.1166 10.196 14.7888 9.86534C14.4609 9.53468 14.0423 9.30887 13.5859 9.21656C13.1295 9.12425 12.6559 9.16961 12.2254 9.34687C11.7948 9.52414 11.4266 9.82531 11.1675 10.2122C10.9084 10.5991 10.77 11.0542 10.77 11.5198C10.7687 11.8271 10.8279 12.1317 10.9443 12.4161C11.0606 12.7005 11.2319 12.9592 11.4483 13.1774C11.6646 13.3956 11.9219 13.5691 12.2053 13.6879C12.4887 13.8067 12.7927 13.8685 13.1 13.8698Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M21.39 21.5799C21.39 19.7899 22.21 18.7299 23.79 18.7299C25.37 18.7299 25.93 19.7299 25.93 21.5799V28.2599H29.9V20.2099C29.9 16.7999 27.97 15.1499 25.27 15.1499C24.5044 15.1382 23.7489 15.3256 23.0775 15.6938C22.4061 16.0619 21.8418 16.5981 21.44 17.2499V15.5399H17.66V28.2599H21.44L21.39 21.5799Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank"
+                  ><svg
+                    width="21"
+                    height="18"
+                    viewBox="0 0 21 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.630005 15.1498C2.45681 16.3204 4.5704 16.9661 6.73953 17.0163C8.90867 17.0664 11.0498 16.519 12.9287 15.434C14.8076 14.3489 16.352 12.7681 17.3928 10.8643C18.4336 8.96051 18.9308 6.80715 18.83 4.63978C19.6427 4.04905 20.3465 3.32156 20.91 2.48979C20.15 2.82378 19.3445 3.04284 18.52 3.13978C19.3902 2.62204 20.041 1.80404 20.35 0.839797C19.5295 1.32038 18.6335 1.65849 17.7 1.8398C17.0717 1.17813 16.2432 0.741412 15.3422 0.596923C14.4413 0.452433 13.5178 0.608193 12.714 1.04019C11.9103 1.47219 11.2709 2.15646 10.8943 2.98761C10.5177 3.81876 10.4248 4.75067 10.63 5.63978C8.97731 5.55657 7.36049 5.12728 5.88422 4.37967C4.40794 3.63206 3.1051 2.58279 2.06 1.29979C1.52601 2.21475 1.36215 3.29928 1.60199 4.33116C1.84183 5.36304 2.46723 6.26413 3.35001 6.84979C2.68746 6.83026 2.03928 6.65192 1.45999 6.32979C1.4499 7.29909 1.77784 8.24164 2.38739 8.99536C2.99694 9.74909 3.85005 10.2669 4.80002 10.4598C4.1873 10.6289 3.54361 10.6529 2.92001 10.5298C3.18523 11.3575 3.70303 12.0814 4.40073 12.5997C5.09842 13.118 5.94096 13.4048 6.81 13.4198C5.94517 14.102 4.95379 14.6061 3.89307 14.903C2.83235 15.1999 1.72332 15.2838 0.630005 15.1498Z"
+                      fill="white"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.78 11.2399C22.57 11.2399 22.9 11.2399 24 11.2999C24.659 11.3109 25.3114 11.4326 25.93 11.6599C26.3831 11.8272 26.7931 12.0937 27.13 12.4399C27.4806 12.7731 27.7478 13.1842 27.91 13.6399C28.147 14.2592 28.269 14.9167 28.27 15.5799C28.32 16.6799 28.33 17.0099 28.33 19.7999C28.33 22.5899 28.33 22.9099 28.27 24.0099C28.269 24.6731 28.147 25.3305 27.91 25.9499C27.7478 26.4056 27.4806 26.8167 27.13 27.1499C26.7931 27.4961 26.3831 27.7626 25.93 27.9299C25.3114 28.1572 24.659 28.2789 24 28.2899C22.9 28.3399 22.57 28.3499 19.78 28.3499C16.99 28.3499 16.66 28.3499 15.56 28.2899C14.901 28.2789 14.2486 28.1572 13.63 27.9299C13.1769 27.7626 12.7668 27.4961 12.43 27.1499C12.0827 26.8139 11.8161 26.4036 11.65 25.9499C11.413 25.3305 11.291 24.6731 11.29 24.0099C11.24 22.9099 11.23 22.5799 11.23 19.7999C11.23 17.0199 11.23 16.6799 11.29 15.5799C11.291 14.9167 11.413 14.2592 11.65 13.6399C11.8161 13.1861 12.0827 12.7758 12.43 12.4399C12.7668 12.0937 13.1769 11.8272 13.63 11.6599C14.2486 11.4326 14.901 11.3109 15.56 11.2999C16.66 11.2999 16.99 11.2399 19.78 11.2399ZM19.78 9.35986C16.95 9.35986 16.59 9.35986 15.48 9.41986C14.6148 9.4368 13.759 9.60256 12.95 9.90987C12.2604 10.1715 11.6325 10.5731 11.1059 11.0895C10.5792 11.6058 10.1652 12.2256 9.88998 12.9099C9.59145 13.7209 9.42928 14.5758 9.41 15.4399C9.36 16.5599 9.35001 16.9099 9.35001 19.7499C9.35001 22.5899 9.35 22.9399 9.41 24.0499C9.42928 24.9139 9.59145 25.7688 9.88998 26.5799C10.1547 27.2768 10.5675 27.9081 11.1 28.4299C11.6197 28.9626 12.2517 29.3725 12.95 29.6299C13.759 29.9372 14.6148 30.1029 15.48 30.1199C16.59 30.1699 16.95 30.1799 19.78 30.1799C22.61 30.1799 22.97 30.1799 24.08 30.1199C24.9483 30.1017 25.8072 29.936 26.62 29.6299C27.3147 29.3712 27.9432 28.9613 28.46 28.4299C28.9925 27.9081 29.4053 27.2768 29.67 26.5799C29.9685 25.7688 30.1307 24.9139 30.15 24.0499C30.2 22.9399 30.21 22.5799 30.21 19.7499C30.21 16.9199 30.21 16.5599 30.15 15.4399C30.1307 14.5758 29.9685 13.7209 29.67 12.9099C29.3943 12.2275 28.9813 11.6091 28.4566 11.093C27.932 10.5769 27.3068 10.1742 26.62 9.90987C25.8072 9.60372 24.9483 9.43802 24.08 9.41986C22.97 9.41986 22.61 9.35986 19.78 9.35986Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M19.78 14.4199C18.7199 14.4199 17.6836 14.7343 16.8021 15.3233C15.9207 15.9122 15.2337 16.7493 14.828 17.7287C14.4223 18.7082 14.3162 19.7859 14.523 20.8256C14.7298 21.8653 15.2403 22.8204 15.9899 23.57C16.7395 24.3196 17.6946 24.8301 18.7343 25.0369C19.774 25.2438 20.8518 25.1376 21.8312 24.7319C22.8106 24.3262 23.6477 23.6392 24.2367 22.7578C24.8256 21.8763 25.14 20.84 25.14 19.7799C25.14 19.076 25.0014 18.379 24.732 17.7287C24.4626 17.0784 24.0678 16.4876 23.5701 15.9898C23.0724 15.4921 22.4815 15.0973 21.8312 14.8279C21.1809 14.5586 20.4839 14.4199 19.78 14.4199ZM19.78 23.2499C19.0913 23.2499 18.4181 23.0456 17.8456 22.6627C17.2731 22.2799 16.8271 21.7358 16.564 21.0993C16.3009 20.4629 16.2325 19.7627 16.3676 19.0873C16.5027 18.412 16.8351 17.792 17.3228 17.3057C17.8105 16.8194 18.4315 16.4887 19.1072 16.3556C19.7829 16.2224 20.483 16.2928 21.1187 16.5577C21.7544 16.8226 22.2972 17.2702 22.6784 17.8438C23.0596 18.4174 23.262 19.0912 23.26 19.7799C23.26 20.2365 23.1699 20.6885 22.9949 21.1102C22.8199 21.5318 22.5634 21.9148 22.2401 22.2371C21.9168 22.5595 21.5331 22.8149 21.111 22.9887C20.6888 23.1625 20.2365 23.2512 19.78 23.2499Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M26.6 14.24C26.598 14.4868 26.523 14.7274 26.3845 14.9317C26.246 15.1359 26.0501 15.2946 25.8215 15.3877C25.5929 15.4807 25.3419 15.5041 25.1001 15.4547C24.8583 15.4054 24.6365 15.2855 24.4627 15.1103C24.2888 14.9351 24.1708 14.7124 24.1233 14.4702C24.0759 14.228 24.1012 13.9772 24.1961 13.7493C24.291 13.5215 24.4513 13.3269 24.6566 13.19C24.8619 13.053 25.1032 12.98 25.35 12.98C25.515 12.98 25.6784 13.0126 25.8307 13.0761C25.983 13.1395 26.1212 13.2325 26.2374 13.3496C26.3536 13.4668 26.4455 13.6057 26.5077 13.7585C26.57 13.9114 26.6013 14.075 26.6 14.24Z"
+                      fill="white"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank"
+                  ><svg
+                    width="28"
+                    height="20"
+                    viewBox="0 0 28 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M25.8897 1.68655C26.3106 2.10919 26.614 2.63425 26.77 3.20996C27.5166 7.55814 27.5166 12.0018 26.77 16.35C26.614 16.9257 26.3106 17.4507 25.8897 17.8734C25.4688 18.296 24.945 18.6016 24.37 18.76C22.26 19.33 13.78 19.33 13.78 19.33C13.78 19.33 5.30998 19.33 3.18998 18.76C2.61632 18.601 2.09407 18.2951 1.6749 17.8724C1.25573 17.4497 0.954145 16.9249 0.799964 16.35C0.0399858 12.0029 0.0399858 7.55699 0.799964 3.20996C0.954145 2.63499 1.25573 2.11024 1.6749 1.68756C2.09407 1.26488 2.61632 0.958924 3.18998 0.799957C5.30998 0.229957 13.78 0.22998 13.78 0.22998C13.78 0.22998 22.26 0.229957 24.37 0.799957C24.945 0.958316 25.4688 1.26392 25.8897 1.68655ZM10.66 5.25V14.31L18.63 9.78L10.66 5.25Z"
+                      fill="white"
+                    /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
           <h1 class="d-flex flex-column">
             <small>WE ARE</small>
             <span>PARTICULAR</span>
@@ -189,16 +360,16 @@
           <div class="col-lg-5 box-group">
             <div class="row m-0">
               <div class="col-12 col-sm-6 box">
-                <span class="numscroller" data-max="26" data-delay="10">0</span>
+                <span class="counter">26</span>
                 Years in The Industry
               </div>
               <div class="col-12 col-sm-6 box d-none d-sm-block"></div>
               <div class="col-12 col-sm-6 box">
-                <span class="numscroller" data-max="25">0</span>
+                <span class="counter">25</span>
                 Projects Delivered On Time
               </div>
               <div class="col-12 col-sm-6 box">
-                <span class="numscroller" data-max="2500">0 </span>
+                <span class="counter">2500</span>
                 Happy Customers
               </div>
             </div>
@@ -442,11 +613,15 @@
             <!--element to hold filtered out items-->
             <div id="projects-hidden" class="hide"></div>
           </div>
+
+          <div class="ctaWrapper">
+            <a href="#" class="cta">Experience Now</a>
+          </div>
         </div>
       </section>
 
       <!--ETour-->
-      <section class="e-tour">
+      <section class="e-tour" id="gallery">
         <div class="sectionBg">
           <picture>
             <source
@@ -465,6 +640,10 @@
           <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
             Experience your Dream Space
           </p>
+
+          <div class="ctaWrapper">
+            <a href="#" class="cta">Experience Now</a>
+          </div>
         </div>
       </section>
 
@@ -572,8 +751,11 @@
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/vendors/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="./js/vendors/numscroller-1.0.js"></script>
+    <script src="./js/vendors/jquery.waypoints.min.js"></script>
+    <script src="./js/vendors/jquery.countup.min.js"></script>
     <script src="./js/index.js" defer></script>
   </body>
 </html>

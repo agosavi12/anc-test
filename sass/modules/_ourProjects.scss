@@ -206,6 +206,29 @@
             }
         }
 
+        .ctaWrapper {
+            position: relative;
+            display: table;
+            margin: 50px auto 0;
+
+            .cta {
+                @include cta($bg: $primary);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                display: block;
+                width: 60px;
+                height: 1px;
+                background-color: $white;
+                z-index: 2;
+
+            }
+        }
+
         
 
     }
