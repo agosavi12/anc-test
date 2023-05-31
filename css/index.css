@@ -10996,6 +10996,9 @@ header a {
 header.scrolled {
   background-color: #611f1d;
 }
+header.scrolled a {
+  color: #fff;
+}
 
 .menu {
   position: fixed;
