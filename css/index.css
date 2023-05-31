@@ -11044,7 +11044,7 @@ header.scrolled {
 .menu_left .mainMenu ul li a {
   display: table;
   font-family: "GothamBold", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #fff;
   line-height: 4.5rem;
 }
@@ -11082,7 +11082,7 @@ header.scrolled {
 }
 .menu_left .secondaryMeny ul li a {
   font-family: "GothamBook", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #fff;
   line-height: 4.5rem;
 }
@@ -11848,7 +11848,7 @@ header.scrolled {
   font-family: "Nexa-Book", sans-serif;
   font-size: 30px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .our-projects .container .op-slider .owl-carousel .project .projectInfo h2, .our-projects .container .op-slider .owl-carousel .project .projectInfo .h2 {
     font-size: 40px;
   }
